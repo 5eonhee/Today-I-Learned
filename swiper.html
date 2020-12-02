@@ -16,5 +16,23 @@
 		<a href="#" class="swiper-arrow prev" tabindex="0" role="button" title="이전 슬라이드"></a>
 		<a href="#" class="swiper-arrow next" tabindex="0" role="button" title="다음 슬라이드"></a>
 	</div>
+	
+	<scri[pt>
+	var cartSwiper = new Swiper('.swiper-container.slider-selection', {
+        loop: true,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        threshold: 30,
+        speed: 600,
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+
+	</script>
 </body>
 </html>
