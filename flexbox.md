@@ -18,4 +18,4 @@ _display:flex;_
 
 **flex-wrap** : 한 줄/여러 줄에 걸쳐 정렬 (nowrap(default), wrap, wrap-reverse)
 
-**속성 단축** (flex-flow : flex-direction + flex-wrap)
+**flex-flow** : flex-direction + flex-wrap)
