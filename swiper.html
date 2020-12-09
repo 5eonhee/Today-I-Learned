@@ -19,24 +19,28 @@
 	
 	<script>
 		var swiper = new Swiper('.swiper-container', {
-			loop: true,
-			slidesPerView: 3,
-			slidesPerGroup: 3,
+			loop: true, // 무한반복
+			speed: 600, // 속도
+			slidesPerView: 3, // 보이는 슬라이드 개수
+			slidesPerGroup: 3, // 그룹으로 묶을 슬라이드 개수 (slidesPerView 와 같은 값을 지정하는게 좋음)
+			loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 채우기 (3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬)
+			spaceBetween : 30, // 슬라이드간 간격
 			threshold: 30,
-			speed: 600,
-			observer: true,
+			observer: true, // 슬라이더 불러올 때마다 초기화
 			observeParents: true,
 			observeSlideChildren: true,
 			navigation: {
-					nextEl: '.swiper-arrow.next',
-					prevEl: '.swiper-arrow.prev'
+				nextEl: '.swiper-arrow.next',
+				prevEl: '.swiper-arrow.prev'
 			},
 			pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
 			},
 			breakpoints: {
-			    768: {}
+			    768: {
+			    }
 			}
 		});
 	</script>
