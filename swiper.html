@@ -43,6 +43,12 @@
 			    }
 			}
 		});
+		
+		swiper.on('breakpoint', function() {
+			setTimeout(function() {
+				swiper.slideTo(0, 0);
+			}, 150);
+		});
 	</script>
 </body>
 </html>
