@@ -7,20 +7,20 @@
 	<title>anchor</title>
 </head>
 <body>
-  <a href="#" class="btn-anchor" data-target=".section">이동하기</a>
-  
-  <div class="section">
-    컨텐츠 영역
-  </div>
-	
+	<a href="#" class="btn-anchor" data-target=".section">이동하기</a>
+
+	<div class="section">
+		컨텐츠 영역
+	</div>
+
 	<script>
 		$('.btn-anchor').on('click', function(e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $target = $this.data('target');
+					e.preventDefault();
+					var $this = $(this);
+					var $target = $this.data('target');
 
-        $('html, body').stop().animate({scrollTop:$($target).offset().top}, 500);
-    });
+					$('html, body').stop().animate({scrollTop:$($target).offset().top}, 500);
+			});
 	</script>
 </body>
 </html>
