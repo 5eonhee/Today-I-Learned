@@ -23,6 +23,7 @@
 		var swiper = new Swiper('.swiper-container', {
 			loop: true, // 무한반복
 			speed: 600, // 속도
+			autoHeight: true, // slide 마다 높이가 다를 경우
 			initialSlide: 1, // 시작위치
 			slidesPerView: 3, // 화면에 보이는 슬라이드 개수
 			slidesPerGroup: 3, // 그룹으로 묶을 슬라이드 개수 (slidesPerView 와 같은 값을 지정하는게 좋음)
@@ -47,10 +48,15 @@
 			    768: {
 				allowTouchMove: false, // 반응형 드래그 방지 해제
 			    }
+			},
+			on: { // breakpoint type1
+			    breakpoint: function() {
+				this.slideTo(0);
+			    }
 			}
 		});
 		
-		// breakpoint 
+		// breakpoint type2
 		swiper.on('breakpoint', function() {
 			setTimeout(function() {
 				swiper.slideTo(0, 0); // (이동할 인덱스, 속도)
