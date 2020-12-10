@@ -15,12 +15,12 @@
 
 	<script>
 		$('.btn-anchor').on('click', function(e) {
-					e.preventDefault();
-					var $this = $(this);
-					var $target = $this.data('target');
+			e.preventDefault(); // a의 기본이벤트 동작 
+			var $this = $(this);
+			var $target = $this.data('target');
 
-					$('html, body').stop().animate({scrollTop:$($target).offset().top}, 500);
-			});
+			$('html, body').stop().animate({scrollTop:$($target).offset().top}, 500);
+		});
 	</script>
 </body>
 </html>
