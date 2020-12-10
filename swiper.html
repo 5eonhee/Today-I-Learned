@@ -45,14 +45,15 @@
 			},
 			breakpoints: { // 반응형 분기점
 			    768: {
-				allowTouchMove: true, // 반응형 드래그 방지 해제
+				allowTouchMove: false, // 반응형 드래그 방지 해제
 			    }
 			}
 		});
 		
+		// breakpoint 
 		swiper.on('breakpoint', function() {
 			setTimeout(function() {
-				swiper.slideTo(0, 0);
+				swiper.slideTo(0, 0); // (이동할 인덱스, 속도)
 			}, 150);
 		});
 	</script>
