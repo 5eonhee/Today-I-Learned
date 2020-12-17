@@ -35,7 +35,7 @@
 			observer: true, // 슬라이더 불러올 때마다 초기화
 			observeParents: true,
 			observeSlideChildren: true,
-			allowTouchMove: true, // 드래그 방지
+			allowTouchMove: true, // 터치 슬라이드 기능 동작
 			roundLengths: true, // 슬라이드 너비와 높이 값을 반올림 (텍스트가 흐려지는 것을 방지)
 			navigation: {
 				nextEl: '.swiper-arrow.next',
@@ -46,9 +46,9 @@
 				type: 'bullets',
 				clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
 			},
-			breakpoints: { // 반응형 분기점
-				768: {
-					allowTouchMove: false, // 반응형 드래그 방지 해제
+			breakpoints: { // 반응형 분기점 (width >= 769)
+				769: {
+					allowTouchMove: false, // 터치 슬라이드 기능 막기
 				}
 			},
 			on: { // breakpoint type1
