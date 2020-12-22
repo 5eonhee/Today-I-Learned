@@ -11,21 +11,6 @@
 
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-   <script>
-      var clipboard = new Clipboard('.btn-copy');
-
-      clipboard.on('success', function(e) {
-         e.clearSelection();
-         alert('복사되었습니다.');
-      });
-      
-      clipboard.on('error', function(e) {
-         prompt('', e.data("clipboard-text"));
-      });
-      
-      $('.btn-copy').on('click', function(e) {
-         e.preventDefault();
-      });
-   </script>
+   <script src="common.js"></script>
 </body>
 </html>
