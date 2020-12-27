@@ -9,7 +9,7 @@ position (top right bottom left) float display
 ```
 
 ```
-width height margin padding
+width (min-width max-width) height (min-height max-height) margin padding
 ```
 
 ```
