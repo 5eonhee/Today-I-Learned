@@ -25,9 +25,9 @@ color font-size font-weight font-family
 ```
 
 ```
-text-align line-height white-space
+text-align line-height
 ```
 
 ```
-etc
+etc (white-space overflow-hidden ...)
 ```
