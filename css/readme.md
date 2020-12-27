@@ -29,5 +29,5 @@ text-align line-height
 ```
 
 ```
-etc (white-space overflow-hidden ...)
+etc (white-space overflow-hidden....)
 ```
