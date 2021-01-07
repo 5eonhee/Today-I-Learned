@@ -1,0 +1,37 @@
+.sec_brush {
+    .sec_selection {
+		text-align:center;
+
+		.title-box {@include vw-pc(padding, 125 0 75);}
+		.title-box h2 {@include vw-pc(font-size, 56);}
+
+        .swiper-container {@include vw-pc(padding, 0 195 220); box-sizing:border-box;}
+        .swiper-wrapper {justify-content:space-between;}
+		.swiper-slide {@include vw-pc(width, 310);}
+		.img-box {@include vw-pc(width, 310); margin:0 auto;}
+		.txt-box h3 {@include vw-pc(padding, 15 0 25); @include vw-pc(font-size, 22); line-height:1.4; box-sizing:border-box;}
+		.txt-box .btn-common {@include vw-pc(width, 196); @include vw-pc(height, 49); border:2px solid #000; @include vw-pc(border-radius, 25); background-color:#fff; @include vw-pc(font-size, 18); @include vw-pc(line-height, 45);}
+		.txt-box .btn-common:hover {background-color:#000; color:#fff;}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.sec_brush {
+		.sec_selection {
+			@include vw-mo(padding, 0 0 80);
+			
+			.inner-1440 {padding:0;}
+			.title-box {@include vw-mo(padding, 110 0 60);}
+			.title-box h2 {@include vw-mo(font-size, 52); letter-spacing:-1px;}
+
+            .swiper-container {@include vw-mo(padding, 0 0 0 60);}
+            .swiper-slide {@include vw-mo(width, 440);}
+            .swiper-slide:last-child {@include vw-mo(margin-right, 60);}
+            .slide-inner {@include vw-mo(width, 400); margin:0 auto;}
+			.img-box {@include vw-mo(width, 400);}
+			.txt-box {padding-bottom:2px; @include vw-mo(padding-left, 20); text-align:left;}
+			.txt-box h3 {@include vw-mo(padding, 20 0); @include vw-mo(font-size, 30); white-space:nowrap;}
+			.txt-box .btn-common {@include vw-mo(width, 197); @include vw-mo(height, 60); @include vw-mo(border-radius, 30); @include vw-mo(font-size, 22); @include vw-mo(line-height, 56); text-align:center;}
+		}
+	}
+}
