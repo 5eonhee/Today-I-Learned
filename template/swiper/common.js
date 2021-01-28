@@ -3,7 +3,7 @@ var swiper = new Swiper('.swiper-container', {
 	speed: 600, // 속도
 	autoHeight: true, // slide 마다 높이가 다를 경우
 	initialSlide: 1, // 시작위치
-	slidesPerView: 3, // 화면에 보이는 슬라이드 개수
+	slidesPerView: 3, // 화면에 보이는 슬라이드 개수 (auto: css에 맞춤)
 	slidesPerGroup: 3, // 그룹으로 묶을 슬라이드 개수 (slidesPerView 와 같은 값을 지정하는게 좋음)
 	loopFillGroupWithBlank : true, // 그룹수가 맞지 않을 경우 빈칸으로 채우기 (3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬)
 	spaceBetween : 30, // 슬라이드간 간격 (px)
