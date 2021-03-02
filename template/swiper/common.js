@@ -28,9 +28,11 @@ var swiper = new Swiper('.swiper-container', {
 		}
 	},
 	on: { // breakpoint type1
-		breakpoint: function() {
-			this.slideTo(0);
-		}
+		var that = this;
+		setTimeout(function() {
+		    that.slideToLoop(0, 0);
+		}, 150);
+	    }
 	}
 });
 
