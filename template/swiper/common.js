@@ -1,7 +1,11 @@
 var swiper = new Swiper('.swiper-container', {
 	loop: true, // 무한반복 (&& slidesPerView:'auto' => loopedSlides 활성화 필요)
 	speed: 600, // 속도
-	slidesPerView: "auto", // 한 화면에 들어오는 슬라이드 갯수, 'auto'는 각 슬라이드 넓이에 맞게 자동 설정 loop 함께 사용시  시켜야 함
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false, // 수동으로 넘기면 자동재생이 멈춰서 설정 필요
+	},
+	slidesPerView: "auto", // 한 화면에 들어오는 슬라이드 갯수, 'auto'는 각 슬라이드 넓이에 맞게 자동 설정 loop 함께 사용 시 auto 설정해야 함
 	autoHeight: true, // slide 마다 높이가 다를 경우
 	initialSlide: 1, // 시작위치
 	slidesPerView: 3, // 화면에 보이는 슬라이드 개수 (auto: css에 맞춤)
