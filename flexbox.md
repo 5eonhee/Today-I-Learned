@@ -2,11 +2,7 @@
 
  연습 (https://flexboxfroggy.com/#ko)
  
-_display:flex;_
-
-```
-order : 요소의 순서 지정
-```
+_display:flex(inline-flex)_
 
 ```
 justify-content : 가로선 상에서 정렬 
@@ -46,4 +42,32 @@ nowrap(default), wrap, wrap-reverse
 
 ```
 flex-flow : flex-direction + flex-wrap
+```
+
+
+
+flex-item에서 표현 가능!
+
+```
+order : 요소의 순서 지정
+```
+
+```
+flex-basis : 초기 크기 세팅
+```
+
+```
+flex-grow : 여분의 공강이 있으면 영역 확장
+
+0, 1
+```
+
+```
+flex-shrink : 여분의 공백이 없으면 영역 축소
+
+0, 1
+```
+
+```
+flex : grow, shrink, basis 동시 진행
 ```
